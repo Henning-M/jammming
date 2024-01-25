@@ -1,6 +1,5 @@
 import './App.css';
-import React, { useEffect, useRef, useState } from 'react';
-import ChangeColor from "../changeColor/changeColor";
+import React, { useState } from 'react';
 
 function App() {
 
