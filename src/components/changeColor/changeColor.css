@@ -1,0 +1,9 @@
+.colorbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 20vh;
+    height: 20vh;
+    background-color: white;
+}
