@@ -1,4 +1,4 @@
-.App {
+.Registration {
   text-align: center;
   margin: 0;
   padding: 0;
@@ -7,10 +7,9 @@
   flex-direction: column;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2a9d8f;
-  background-color: #264653;
 }
 
-.App-header {
+.Registration-header {
   height: 10vh;
   background-color: #2a9d8f; /* You can set your desired background color */
   color: #264653; /* You can set your desired text color */
@@ -18,16 +17,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.5vmin);
 }
 
-.App-main {
+.Registration-header li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.Registration-main {
   flex: 1;
   background-color: #264653;
   padding: 20px;
-}
-
-.removeTeam:hover {
-  text-decoration-line: line-through;
-  cursor: pointer;
 }

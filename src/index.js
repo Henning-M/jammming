@@ -1,14 +1,26 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from 'react-dom';
 import App from "./components/App/App";
-import "./index.css";
+import { Provider } from 'react-redux';
+import { store } from './components/App/store';
+import "./index.css"; //Check relevance later - currenty only minor effect
+import  { BrowserRouter } from 'react-router-dom';
 
-import ReactDOM from "react-dom/client";
-import "./index.css";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
+//Integratin Router
+ReactDOM.render(
+  <Provider store={store}>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
+  </BrowserRouter>
+  </Provider>,
+  document.getElementById("root")
 );
+
+
+// //This worked before using Router (but after integrating redux)
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <App />
+//   </Provider>,
+//   document.getElementById('root')
+// );

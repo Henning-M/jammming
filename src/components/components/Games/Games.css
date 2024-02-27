@@ -1,0 +1,33 @@
+.Games {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2a9d8f;
+  }
+  
+  .Games-header {
+    height: 10vh;
+    background-color: #2a9d8f; /* You can set your desired background color */
+    color: #264653; /* You can set your desired text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: calc(10px + 1.5vmin);
+  }
+  
+  .Games-header li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .Games-main {
+    flex: 1;
+    background-color: #264653;
+    padding: 20px;
+  }
+  
