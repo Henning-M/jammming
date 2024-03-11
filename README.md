@@ -16,6 +16,13 @@ Trying to focus on the very basic features, this is what I would like to achieve
 - Game results can be entered
 - The game schedule adapts automatically, based on the entered results (e.g.: winner advances in knockout)
 
+## Status [Mar 11, 2024]
+
+### Functional
+ - Games section now allows creating knock-out schedule from registered teams
+ - knockout schedule is rendered, can be re-shuffled or cleared - all using a new store slice
+ - Limitations: only works properly with even number of teams
+
 ## Status [Feb 27, 2024]
 
 ### Functional
