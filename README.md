@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Tournament Tool(s) for Beachvolleyball [beta]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Goals
 
-## Available Scripts
+This is built on the side while completing beginner courses on software development with codecademy. It is currently completely experimental but has a very real use-case in mind. The goals of this experiment e.g.:
+- Test newly acquired skills from the codecademy course
+- Develop something that may become useful for my hobby
+- Distract me from the daily grind
 
-In the project directory, you can run:
+## Product Capabilities
 
-### `npm start`
+The idea is, to build a tool that makes it easy to set up and manage a Beachvolleyball tournament among friends. Having played tournaments myself and being somewhat passionate about designing a really useful product, I have a million ideas on what this tool should do and scope creep is a permanent threat.
+Trying to focus on the very basic features, this is what I would like to achieve:
+- Teams can register for the tournament
+- A game schedule is created automatically from the list of registered teams
+- Game results can be entered
+- The game schedule adapts automatically, based on the entered results (e.g.: winner advances in knockout)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Status [Feb 27, 2024]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Functional
+- teams can register
+- a list of registered teams is displayed
+- teams can be removed from the list (1by1 or all)
+- team registration can be closed (manually)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Stack
+- React (JS, HTML/JSX, CSS)
+- Redux & Toolkit
+- React Router
