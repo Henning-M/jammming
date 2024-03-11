@@ -29,8 +29,8 @@ function Registration() {
     dispatch(addTeam());                  // Dispatch action to add team
   };
 
-  const handleRemoveTeam = (team) => {
-    dispatch(removeTeam(team));           // Dispatch action to remove team
+  const handleRemoveTeam = (teamName) => {
+    dispatch(removeTeam(teamName));           // Dispatch action to remove team
   };
 
   const handleClearTeams = () => {
@@ -72,7 +72,7 @@ function Registration() {
             <ol>
               {teamsArray.map((team, index) => (
                 <li key={index}>
-                  {team} {isFormVisible && <span className="removeTeam" onClick={() => handleRemoveTeam(team)}>  [X]</span>}
+                  {team.teamName} {isFormVisible && <span className="removeTeam" onClick={() => handleRemoveTeam(team.teamName)}>  [X]</span>}
                 </li>
               ))}
             </ol>
@@ -85,11 +85,9 @@ function Registration() {
           <p><button onClick={handleCloseRegistration}>{isFormVisible ? 'Close registration' : 'Re-open registration'}</button></p>
         </div>
 
-        <hr></hr>
-
         {!isFormVisible && 
-        <div className="knockouts">
-          <p>Time for knockout games!</p>
+        <div className="registration-closed">
+          <p>Registration closed.</p>
         </div>
         }
       </main>

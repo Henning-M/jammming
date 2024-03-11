@@ -2,7 +2,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,5 +29,13 @@
     flex: 1;
     background-color: #264653;
     padding: 20px;
+  }
+
+  .Games button {
+    margin: 0 5px
+  }
+
+  .Games input {
+    margin: 0 5px
   }
   
